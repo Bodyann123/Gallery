@@ -1,16 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Ім'я автора">
-    <title>Document</title>
+    <meta name="author" content="Губар Богдан Олександрович">
+    <title>Головна сторінка</title>
 </head>
-<body>
-    <h1>Губар Богдан Олександрович</h1>
-    <a href="/contacts.html">Contacts</a>
-    <a href="/gallery.html">Our Gallery</a>
-    <a href="/about.html">About us</a>
-    Lorem ipsum dolor sit amet consectetur.
+<body background="back.jpg" text="black">
+
+    <h1 align="center"><font size="6" color="blue">Губар Богдан Олександрович</font></h1>
+
+    <p><font size="4" color="red"><strong>Ласкаво просимо на мій сайт!</strong></font></p>
+    <p><font size="3" color="green"><em>Тут ви знайдете інформацію про мене, мої контакти та галерею.</em></font></p>
+
+    <h2><font size="5">Меню</font></h2>
+    <ul>
+        <li><a href="contacts.html"><font color="red">Контакти</font></a></li>
+        <li><a href="gallery.html"><font color="red">Наша галерея</font></a></li>
+        <li><a href="about.html"><font color="red">Про нас</font></a></li>
+        <li><a href="https://www.google.com" target="_blank"><font color="red">Google</font></a></li>
+    </ul>
+
+    <h2><font size="5">Зображення</font></h2>
+    <a href="large-image.jpg" target="_blank">
+        <img src="cry.jpg" alt="Приклад картинки" width="400" height="300">
+    </a>
+
+    <h2><font size="5">Списки</font></h2>
+
+    <h3>Маркування</h3>
+    <ul type="square">
+        <li>Елемент 1</li>
+        <li>Елемент 2</li>
+    </ul>
+    
+    <h3>Нумерація</h3>
+    <ol type="I">
+        <li>Пункт перший</li>
+        <li>Пункт другий</li>
+    </ol>
+
+    <h3>Список визначень</h3>
+    <dl>
+        <dt><font size="4" color="blue"><strong>HTML</strong></font></dt>
+        <dd>Мова розмітки гіпертексту.</dd>
+        <dt><font size="4" color="blue"><strong>CSS</strong></font></dt>
+        <dd>Мова стилів для оформлення сторінок.</dd>
+    </dl>
+
+    <h2><font size="5">Таблиця</font></h2>
+    <table border="1" width="80%" cellspacing="5" cellpadding="10" align="center">
+        <caption><strong><font size="4">Приклад таблиці</font></strong></caption>
+        <tr bgcolor="#ffcccb">
+            <th>Фото</th>
+            <th>Посилання</th>
+            <th>Опис</th>
+            <th>Додатково</th>
+        </tr>
+        <tr>
+            <td><img src="cry.jpg" alt="Картинка" width="100" height="100"></td>
+            <td><a href="https://www.google.com" target="_blank"><font color="red">Перейти</font></a></td>
+            <td>Це приклад опису.</td>
+            <td>Додаткова інформація</td>
+        </tr>
+        <tr>
+            <td><img src="louvre.jpg" alt="Картинка" width="100" height="100"></td>
+            <td><a href="https://www.youtube.com" target="_blank"><font color="red">Детальніше</font></a></td>
+            <td>Ще один опис.</td>
+            <td>Щось ще</td>
+        </tr>
+    </table>
+
+    <h2><font size="5">Складна таблиця</font></h2>
+    <table border="1" width="80%" cellspacing="5" cellpadding="10" align="center">
+        <colgroup>
+            <col span="2" bgcolor="lightgrey">
+        </colgroup>
+        <tr bgcolor="#aaffaa">
+            <th colspan="2">Об'єднана шапка</th>
+            <th>Окрема колонка</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Об'єднана комірка</td>
+            <td>Комірка 1</td>
+            <td>Комірка 2</td>
+        </tr>
+        <tr>
+            <td>Комірка 3</td>
+            <td>Комірка 4</td>
+        </tr>
+    </table>
+
+    <h2><font size="5">Плаваючий фрейм</font></h2>
+    <iframe src="https://www.wikipedia.org" width="600" height="400"></iframe>
+
 </body>
 </html>
