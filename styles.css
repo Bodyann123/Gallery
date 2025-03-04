@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1, h2, h3 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+
+.main-menu {
+    background: #2c3e50;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.main-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.main-menu a:hover {
+    color: #f39c12;
+}
+
+/* Блок привітання */
+.main-welcome {
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    color: #555;
+    margin: 20px;
+}
+
+/* Галерея */
+.main-gallery {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main-image {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.main-image:hover {
+    transform: scale(1.05);
+}
+
+/* Таблиці */
+.main-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.main-table table {
+    width: 100%;
+    border: 1px solid #ddd;
+    background-color: white;
+}
+
+.main-table th, .main-table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.main-table th {
+    background-color: #3498db;
+    color: white;
+}
+
+.main-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+.main-footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+ul, ol {
+    padding-left: 20px;
+}
+
+ul li {
+    color: #2980b9;
+    font-size: 18px;
+}
+
+ol li {
+    color: #e74c3c;
+    font-size: 18px;
+}
+
+
+
+.gallery-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gallery-menu {
+    background: #2c3e50;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.gallery-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gallery-menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.gallery-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.gallery-menu a:hover {
+    color: #f39c12;
+}
+
+.gallery-list ul, .gallery-list ol {
+    padding-left: 20px;
+}
+
+.gallery-list ul li {
+    color: #2980b9;
+    font-size: 18px;
+}
+
+.gallery-list ol li {
+    color: #e74c3c;
+    font-size: 18px;
+}
+
+.gallery-footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+.about-header {
+    background-color: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-menu ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.about-menu ul li a {
+    color: #f0a500;
+    text-decoration: none;
+}
+
+.about-section, .about-offer, .about-location, .about-map {
+    padding: 20px;
+    text-align: center;
+}
+
+.about-offer-list {
+    list-style-type: square;
+    padding-left: 20px;
+    text-align: left;
+    display: inline-block;
+}
+
+.about-footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.contacts-body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts-header {
+    background-color: #aaa;
+    padding: 20px;
+    text-align: center;
+}
+
+.contacts-title {
+    font-size: 28px;
+    margin: 0;
+}
+
+.contacts-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contacts-menu ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.contacts-link {
+    color: #eee;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.contacts-main {
+    padding: 20px;
+    text-align: center;
+}
+
+.contacts-subtitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contacts-text {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contacts-subheading {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #222;
+}
+
+.contacts-list {
+    list-style-type: square;
+    padding-left: 20px;
+    display: inline-block;
+    text-align: left;
+}
+
+.contacts-item {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contacts-email-link {
+    color: #f0a500;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contacts-table {
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.contacts-table th, .contacts-table td {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.contacts-table-header {
+    background-color: #f0a500;
+    color: #121212;
+}
+
+.contacts-social {
+    margin-top: 20px;
+}
+
+.contacts-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.contacts-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.contacts-footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+

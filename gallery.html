@@ -1,44 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Галерея</title>
 </head>
 <body>
 
-    <h1>Art Gallery</h1>
+    <header class="gallery-menu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="about.html">Про нас</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <a href="/index.html">Main page</a>
-    <a href="/contacts.html">Contacts</a>
-    <a href="/about.html">About us</a>
+    <section class="gallery-container">
+        <h1>Галерея мистецтва</h1>
+        <p class="gallery-description">Ласкаво просимо до нашої колекції мистецьких творів. Тут ви знайдете роботи відомих художників та унікальні арт-об'єкти.</p>
 
-    <h2>
-        Ласкаво просимо до галереї
-    </h2>
+        <h2>Категорії</h2>
+        <div class="gallery-list">
+            <ul>
+                <li>Ренесанс</li>
+                <li>Імпресіонізм</li>
+                <li>Сюрреалізм</li>
+                <li>Модерн</li>
+                <li>Фотографія</li>
+            </ul>
+        </div>
 
-    <h2>Категорії</h2>
+        <h2>Відомі художники</h2>
+        <div class="gallery-list">
+            <ol>
+                <li>Леонардо да Вінчі</li>
+                <li>Пабло Пікассо</li>
+                <li>Клод Моне</li>
+                <li>Фріда Кало</li>
+                <li>Едвард Мунк</li>
+            </ol>
+        </div>
 
-    <ul type="square">
-        <li>Ренесанс</li>
-        <li>Імпресіонізм</li>
-        <li>Сюрреалізм</li>
-        <li>Модерн</li>
-        <li>Фото</li>
-    </ul>
+        <h2>Приклади робіт</h2>
+        <div class="gallery-grid">
+            <img src="images/mona-lisa.jpg" alt="Мона Ліза" class="gallery-image">
+            <img src="images/starry-night.jpg" alt="Зоряна ніч" class="gallery-image">
+            <img src="images/the-scream.jpg" alt="Крик" class="gallery-image">
+        </div>
+    </section>
 
-    <h2>Відомі художники</h2>
-
-    <ol type="I">
-        <li>Л.Да Вінчі</li>
-        <li>П.Пікассо</li>
-        <li>К.Моне</li>
-        <li>Ф.Кало</li>
-        <li>Е.Мунк</li>
-    </ol>
-
-    <h2>Про галерею</h2>
-
+    <footer class="gallery-footer">
+        <p>&copy; 2025 Галерея мистецтва. Всі права захищені.</p>
+    </footer>
 
 </body>
 </html>
