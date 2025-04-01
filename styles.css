@@ -12,10 +12,40 @@ body {
 }
 
 
-h1, h2, h3 {
+h1 {
     text-align: center;
     color: #2c3e50;
     margin-bottom: 10px;
+}
+
+
+h2 + h3 {
+    color: #e74c3c;
+    font-style: italic;
+}
+
+
+section > h2 {
+    color: #2c3e50;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+h3 + p {
+    color: #555;
+    font-size: 16px;
+}
+
+
+ul > li {
+    color: #2980b9;
+    font-size: 18px;
+}
+
+ol > li {
+    color: #e74c3c;
+    font-size: 18px;
 }
 
 
@@ -47,7 +77,7 @@ h1, h2, h3 {
     color: #f39c12;
 }
 
-/* Блок привітання */
+
 .main-welcome {
     text-align: center;
     font-size: 20px;
@@ -56,7 +86,7 @@ h1, h2, h3 {
     margin: 20px;
 }
 
-/* Галерея */
+
 .main-gallery {
     text-align: center;
     margin-top: 20px;
@@ -74,7 +104,7 @@ h1, h2, h3 {
     transform: scale(1.05);
 }
 
-/* Таблиці */
+
 .main-table {
     width: 80%;
     margin: 20px auto;
@@ -218,6 +248,11 @@ ol li {
     display: inline-block;
 }
 
+.offer-list > li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
 .about-footer {
     background-color: #1e1e1e;
     text-align: center;
@@ -232,7 +267,7 @@ ol li {
 }
 
 .contacts-header {
-    background-color: #aaa;
+    background-color: #eee;
     padding: 20px;
     text-align: center;
 }
@@ -240,6 +275,16 @@ ol li {
 .contacts-title {
     font-size: 28px;
     margin: 0;
+}
+
+.contacts-menu{
+    background: #2c3e50;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.contacts-menu a{
+    font-weight: bold;
 }
 
 .contacts-menu ul {
@@ -336,4 +381,6 @@ ol li {
     padding: 10px;
     margin-top: 20px;
 }
+
+
 
