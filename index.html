@@ -1,83 +1,106 @@
 <!DOCTYPE html>
 <html lang="uk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Губар Богдан Олександрович">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Губар Богдан Олександрович" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Головна</title>
-    <style>
-        .main-menu a {
-            color: red ;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            color: blue;
-        }
-    </style>
-</head>
-<body class="main-body">
-
+  </head>
+  <body class="main-body">
     <header class="main-header">
-        <h1 class="main-title">Картинна Галерея</h1>
+      <h1 class="main-title">Картинна Галерея</h1>
     </header>
 
     <nav class="main-menu">
-        <ul>
-            <li><a href="contacts.html">Контакти</a></li>
-            <li><a href="gallery.html">Наша галерея</a></li>
-            <li><a href="about.html">Про нас</a></li>
-        </ul>
+      <ul>
+        <li><a href="contacts.html">Контакти</a></li>
+        <li><a href="gallery.html">Наша галерея</a></li>
+        <li><a href="about.html">Про нас</a></li>
+      </ul>
     </nav>
 
     <section class="main-welcome">
-        <p style="color: blue; font-size: 20px; font-weight: bold;">
-            Ласкаво просимо до галереї!
-        </p>
+      <p style="color: blue; font-size: 20px; font-weight: bold">
+        Ласкаво просимо до галереї!
+      </p>
     </section>
+    <!-- Новий блок спеціальних пропозицій -->
+    <div class="special-offers">
+      <h2 class="special-title">Спеціальні пропозиції</h2>
 
+      <div class="offer-block">
+        <h3 class="offer-title">Екскурсія "Шедеври Ренесансу"</h3>
+        <span class="offer-price">450</span>
+        <p class="offer-desc">
+          Унікальна екскурсія з гідом по найвідомішим роботам епохи Відродження.
+        </p>
+        <a href="#" class="offer-link">Детальніше</a>
+      </div>
+
+      <div class="offer-block">
+        <h3 class="offer-title">Мастер-клас з живопису</h3>
+        <span class="offer-price">600</span>
+        <p class="offer-desc">
+          Навчіться основам живопису від наших майстрів. Всі матеріали включено.
+        </p>
+        <a href="#" class="offer-link">Детальніше</a>
+      </div>
+
+      <div class="offer-block">
+        <h3 class="offer-title">Сімейний абонемент</h3>
+        <span class="offer-price">1200</span>
+        <p class="offer-desc">
+          Відвідування всіх виставок протягом місяця для всієї родини.
+        </p>
+        <a href="#" class="offer-link">Детальніше</a>
+      </div>
+      <div class="additional-info">
+        <p>Акція діє до 31 грудня 2025 року</p>
+        <p>Кількість місць обмежена</p>
+      </div>
+    </div>
     <section class="main-gallery">
-        <h2>Крик</h2>
-        <a href="cry.jpg" target="_blank">
-            <img src="cry.jpg" alt="Картина" class="main-image">
-        </a>
+      <h2>Крик</h2>
+      <a href="cry.jpg" target="_blank">
+        <img src="cry.jpg" alt="Картина" class="main-image" />
+      </a>
     </section>
 
     <section class="main-lists">
-        <h2>Категорії мистецтва</h2>
-        <h3>Живопис</h3>
-        <ul>
-            <li>Класичний</li>
-            <li>Сучасний</li>
-        </ul>
-        
-        <h3>Скульптура</h3>
-        <ol>
-            <li>Антична</li>
-            <li>Модерн</li>
-        </ol>
+      <h3>Живопис</h3>
+      <h2>Категорії мистецтва</h2>
+      <h3>Живопис</h3>
+      <ul>
+        <li>Класичний</li>
+        <li>Сучасний</li>
+      </ul>
+
+      <h3>Скульптура</h3>
+      <ol>
+        <li>Антична</li>
+        <li>Модерн</li>
+      </ol>
     </section>
 
     <section class="main-table">
-        <h2>Інформація про виставки</h2>
-        <table>
-            <tr>
-                <th>Зображення</th>
-                <th>Назва</th>
-                <th>Опис</th>
-            </tr>
-            <tr>
-                <td><img src="louvre.jpg" alt="Картинка"></td>
-                <td>Лувр</td>
-                <td>Відомий музей у Франції</td>
-            </tr>
-        </table>
+      <h2>Інформація про виставки</h2>
+      <table>
+        <tr>
+          <th>Зображення</th>
+          <th>Назва</th>
+          <th>Опис</th>
+        </tr>
+        <tr>
+          <td><img src="louvre.jpg" alt="Картинка" /></td>
+          <td>Лувр</td>
+          <td>Відомий музей у Франції</td>
+        </tr>
+      </table>
     </section>
 
     <footer class="main-footer">
-        <p>© 2025 Галерея мистецтва</p>
+      <p>© 2025 Галерея мистецтва</p>
     </footer>
-</body>
+  </body>
 </html>
-
