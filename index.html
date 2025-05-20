@@ -65,6 +65,39 @@
         </tr>
       </table>
     </section>
+    <section>
+      <h2>1. Обробники подій миші в галереї</h2>
+
+      <button onclick="handleAttrClick()">Показати опис (атрибут)</button>
+      <button id="byProperty">Показати автора (властивість)</button>
+      <button id="multiBtn">🎨 Додати рамку ×2 (addEventListener)</button>
+      <button id="objHandlerBtn">
+        Змінити стиль галереї (об’єкт-обробник)
+      </button>
+      <button id="removeObj">❌ Скасувати стиль</button>
+
+      <p id="status"></p>
+    </section>
+
+    <section>
+      <h2>Вибір картини</h2>
+      <ul id="highlightList" class="highlight-list">
+        <li>«Зоряна ніч» — Ван Гог</li>
+        <li>«Таємна вечеря» — да Вінчі</li>
+        <li>«Дівчина з перловою сережкою» — Вермеєр</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Меню дій (data-*)</h2>
+      <div class="menu" id="menu">
+        <button class="menu-btn" data-action="sayHello">ℹ️ Про галерею</button>
+        <button class="menu-btn" data-action="showTime">🕒 Поточний час</button>
+        <button class="menu-btn" data-action="changeColor">
+          🎨 Змінити фон
+        </button>
+      </div>
+    </section>
 
     <footer class="main-footer">
       <p>© 2025 Галерея мистецтва</p>
