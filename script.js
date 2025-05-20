@@ -131,7 +131,7 @@ document.getElementById('removeObj').addEventListener('click', function () {
   document.getElementById('status').style.color = 'red';
 });
 
-// === 2. Список — підсвічування ===
+
 const ul = document.getElementById('highlightList');
 
 ul.onclick = function (event) {
@@ -141,7 +141,6 @@ ul.onclick = function (event) {
   }
 };
 
-// === 3. Меню з поведінкою через data-action ===
 const menu = document.getElementById('menu');
 
 menu.onclick = function (event) {
@@ -166,3 +165,65 @@ const behavior = {
       "#" + Math.floor(Math.random() * 16777215).toString(16);
   }
 };
+// Lab 8 
+
+let draggedElement = null;
+let offsetX = 0;
+let offsetY = 0;
+
+function enableDrag(elem) {
+  elem.addEventListener('mousedown', (e) => {
+    if (!e.target.classList.contains('painting')) return;
+
+    draggedElement = e.target;
+    offsetX = e.offsetX;
+    offsetY = e.offsetY;
+    draggedElement.style.position = 'absolute';
+    draggedElement.style.zIndex = 1000;
+    document.body.appendChild(draggedElement);
+
+    moveAt(e.pageX, e.pageY);
+
+    function moveAt(pageX, pageY) {
+      draggedElement.style.left = pageX - offsetX + 'px';
+      draggedElement.style.top = pageY - offsetY + 'px';
+    }
+
+    function onMouseMove(e) {
+      moveAt(e.pageX, e.pageY);
+    }
+
+    document.addEventListener('mousemove', onMouseMove);
+
+    draggedElement.onmouseup = function () {
+      document.removeEventListener('mousemove', onMouseMove);
+      draggedElement.onmouseup = null;
+
+      const dropZone = document.getElementById('dropZone');
+      const gallery = document.getElementById('gallery');
+
+      const dropRect = dropZone.getBoundingClientRect();
+      const dragRect = draggedElement.getBoundingClientRect();
+
+      if (
+        dragRect.left < dropRect.right &&
+        dragRect.right > dropRect.left &&
+        dragRect.top < dropRect.bottom &&
+        dragRect.bottom > dropRect.top
+      ) {
+        dropZone.appendChild(draggedElement);
+        draggedElement.style.position = 'static';
+        draggedElement.style.zIndex = 'auto';
+      } else {
+        gallery.appendChild(draggedElement);
+        draggedElement.style.position = 'static';
+        draggedElement.style.zIndex = 'auto';
+      }
+
+      draggedElement = null;
+    };
+  });
+}
+
+enableDrag(document.getElementById('gallery'));
+enableDrag(document.getElementById('dropZone'));
