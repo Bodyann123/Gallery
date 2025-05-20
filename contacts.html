@@ -1,14 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Контакти</title>
 </head>
-<body>
-    <a href="/index.html">Main page</a>
-    <a href="/gallery.html">Our Gallery</a>
-    <a href="/about.html">About us</a>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, fugit.
+<body class="contacts-body">
+
+    <header class="contacts-header">
+        <h1 class="contacts-title">Контакти</h1>
+        <nav class="contacts-menu">
+            <ul>
+                <li><a href="index.html" class="contacts-link">Головна сторінка</a></li>
+                <li><a href="gallery.html" class="contacts-link">Наша галерея</a></li>
+                <li><a href="about.html" class="contacts-link">Про нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contacts-main">
+        <section class="contacts-info">
+            <h2 class="contacts-subtitle">Як з нами зв'язатися?</h2>
+            <p class="contacts-text">Якщо у вас є питання або пропозиції, звертайтеся до нас за наведеними контактами:</p>
+        </section>
+
+        <section class="contacts-address">
+            <h3 class="contacts-subheading">Адреса</h3>
+            <p class="contacts-text">м. Київ, вул. Хрещатик, 22, 01001, Україна</p>
+        </section>
+
+        <section class="contacts-phones">
+            <h3 class="contacts-subheading">Телефони</h3>
+            <ul class="contacts-list">
+                <li class="contacts-item">+38 (044) 123-45-67</li>
+                <li class="contacts-item">+38 (050) 987-65-43</li>
+            </ul>
+        </section>
+
+        <section class="contacts-email">
+            <h3 class="contacts-subheading">Електронна пошта</h3>
+            <p class="contacts-text"><a href="mailto:info@example.com" class="contacts-email-link">info@example.com</a></p>
+        </section>
+
+        <section class="contacts-hours">
+            <h3 class="contacts-subheading">Графік роботи</h3>
+            <table class="contacts-table">
+                <tr class="contacts-table-header">
+                    <th>День</th>
+                    <th>Години роботи</th>
+                </tr>
+                <tr>
+                    <td>Понеділок - П’ятниця</td>
+                    <td>09:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Субота</td>
+                    <td>10:00 - 16:00</td>
+                </tr>
+                <tr>
+                    <td>Неділя</td>
+                    <td>Вихідний</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="contacts-social">
+            <h3 class="contacts-subheading">Ми в соцмережах і месенджерах</h3>
+            <p class="contacts-text">Зв’яжіться з нами через ваш улюблений месенджер:</p>
+            <div class="contacts-icons">
+                <a href="https://t.me/example" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" class="contacts-icon">
+                </a>
+                <a href="https://wa.me/380501234567" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="contacts-icon">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="contacts-footer">
+        <p class="contacts-text">© 2025 Всі права захищені</p>
+    </footer>
+
 </body>
 </html>

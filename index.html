@@ -1,14 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <a href="/contacts.html">Contacts</a>
-    <a href="/gallery.html">Our Gallery</a>
-    <a href="/about.html">About us</a>
-    Lorem ipsum dolor sit amet consectetur.
-</body>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Губар Богдан Олександрович" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Головна</title>
+  </head>
+  <body class="main-body">
+    <header class="main-header" id="mainHeader">
+      <h1 class="main-title">Картинна Галерея</h1>
+    </header>
+
+    <nav class="main-menu">
+      <ul>
+        <li><a href="contacts.html">Контакти</a></li>
+        <li><a href="gallery.html">Наша галерея</a></li>
+        <li><a href="about.html">Про нас</a></li>
+      </ul>
+    </nav>
+
+    <section class="main-welcome">
+      <p style="color: blue; font-size: 20px; font-weight: bold">
+        Ласкаво просимо до галереї!
+      </p>
+    </section>
+
+    <section class="main-gallery">
+      <h2>Крик</h2>
+      <a href="cry.jpg" target="_blank">
+        <img src="cry.jpg" alt="Картина" class="main-image" />
+      </a>
+    </section>
+
+    <section class="main-lists">
+      <h3>Живопис</h3>
+      <h2>Категорії мистецтва</h2>
+      <h3>Живопис</h3>
+      <ul>
+        <li>Класичний</li>
+        <li>Сучасний</li>
+      </ul>
+
+      <h3>Скульптура</h3>
+      <ol>
+        <li>Антична</li>
+        <li>Модерн</li>
+      </ol>
+    </section>
+
+    <section class="main-table">
+      <h2>Інформація про виставки</h2>
+      <table>
+        <tr>
+          <th>Зображення</th>
+          <th>Назва</th>
+          <th>Опис</th>
+        </tr>
+        <tr>
+          <td><img src="louvre.jpg" alt="Картинка" /></td>
+          <td>Лувр</td>
+          <td>Відомий музей у Франції</td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <h2>1. Обробники подій миші в галереї</h2>
+
+      <button onclick="handleAttrClick()">Показати опис (атрибут)</button>
+      <button id="byProperty">Показати автора (властивість)</button>
+      <button id="multiBtn">🎨 Додати рамку ×2 (addEventListener)</button>
+      <button id="objHandlerBtn">
+        Змінити стиль галереї (об’єкт-обробник)
+      </button>
+      <button id="removeObj">❌ Скасувати стиль</button>
+
+      <p id="status"></p>
+    </section>
+
+    <section>
+      <h2>Вибір картини</h2>
+      <ul id="highlightList" class="highlight-list">
+        <li>«Зоряна ніч» — Ван Гог</li>
+        <li>«Таємна вечеря» — да Вінчі</li>
+        <li>«Дівчина з перловою сережкою» — Вермеєр</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Меню дій (data-*)</h2>
+      <div class="menu" id="menu">
+        <button class="menu-btn" data-action="sayHello">ℹ️ Про галерею</button>
+        <button class="menu-btn" data-action="showTime">🕒 Поточний час</button>
+        <button class="menu-btn" data-action="changeColor">
+          🎨 Змінити фон
+        </button>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <p>© 2025 Галерея мистецтва</p>
+    </footer>
+  </body>
 </html>
